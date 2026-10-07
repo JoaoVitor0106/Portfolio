@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { ArrowRight, Github, Linkedin, Mail, ExternalLink, Code2, Database, LayoutDashboard, Terminal } from 'lucide-react';
+import { ArrowRight, Mail, ExternalLink, Code2, Database, LayoutDashboard, Terminal } from 'lucide-react';
 import './index.css';
 
 function App() {
@@ -54,22 +54,23 @@ function App() {
               
               {/* Featured Project: Raiuva */}
               <div className="project-card glass featured animate-on-scroll" style={{ animationDelay: '0.1s' }}>
-                <div className="project-image-placeholder glass" style={{ width: '100%', height: '100%', minHeight: '300px', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '16px', background: 'rgba(255,255,255,0.4)' }}>
-                  <LayoutDashboard size={64} style={{ color: 'var(--pastel-purple)' }} />
+                <div className="project-image-placeholder glass" style={{ width: '100%', height: '100%', minHeight: '300px', display: 'flex', alignItems: 'center', justifyItems: 'center', borderRadius: '16px', background: 'rgba(255,255,255,0.4)', overflow: 'hidden' }}>
+                  <img src="/raiuva-logo.png" alt="RaiUva Logo" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 </div>
                 <div className="project-content">
                   <div className="project-icon bg-purple">
                     <LayoutDashboard size={24} color="#fff" />
                   </div>
-                  <h3>Raiuva</h3>
+                  <h3>RaiUva</h3>
                   <p>
-                    O projeto principal do meu portfólio. Uma aplicação inovadora, 
-                    com foco em performance e uma experiência de usuário excepcional. 
-                    (Descrição detalhada em breve).
+                    Uma aplicação full-stack moderna e multiplataforma desenvolvida com React, Node.js e Firebase. 
+                    Possui suporte tanto para web quanto para dispositivos móveis (via Capacitor).
                   </p>
                   <div className="project-tags">
-                    <span className="tag">Em Destaque</span>
-                    <span className="tag">Web</span>
+                    <span className="tag">React</span>
+                    <span className="tag">Node.js</span>
+                    <span className="tag">Firebase</span>
+                    <span className="tag">Capacitor</span>
                   </div>
                   <a href="#" className="project-link">
                     Acessar Projeto <ExternalLink size={16} />
@@ -93,7 +94,7 @@ function App() {
                     <span className="tag">Data Analysis</span>
                   </div>
                   <a href="https://github.com/JoaoVitor0106/Analise_GasNatural" target="_blank" rel="noopener noreferrer" className="project-link">
-                    Ver no GitHub <Github size={16} />
+                    Ver no GitHub <Code2 size={16} />
                   </a>
                 </div>
               </div>
@@ -114,7 +115,7 @@ function App() {
                     <span className="tag">Arquitetura</span>
                   </div>
                   <a href="https://github.com/JoaoVitor0106/Boieng737" target="_blank" rel="noopener noreferrer" className="project-link">
-                    Ver no GitHub <Github size={16} />
+                    Ver no GitHub <Code2 size={16} />
                   </a>
                 </div>
               </div>
@@ -136,7 +137,27 @@ function App() {
                     <span className="tag">Game Dev</span>
                   </div>
                   <a href="https://github.com/JoaoVitor0106/Corrida-Sensata" target="_blank" rel="noopener noreferrer" className="project-link">
-                    Ver no GitHub <Github size={16} />
+                    Ver no GitHub <Code2 size={16} />
+                  </a>
+                </div>
+              </div>
+
+              {/* Project 5: MyZone */}
+              <div className="project-card glass animate-on-scroll" style={{ animationDelay: '0.5s' }}>
+                <div className="project-content">
+                  <div className="project-icon bg-yellow">
+                    <LayoutDashboard size={24} color="#333" />
+                  </div>
+                  <h3>MyZone</h3>
+                  <p>
+                    Uma plataforma que estou desenvolvendo atualmente. 
+                    Mais detalhes estarão disponíveis no GitHub em breve!
+                  </p>
+                  <div className="project-tags">
+                    <span className="tag">Em breve</span>
+                  </div>
+                  <a href="#" className="project-link">
+                    Repositório em breve <Code2 size={16} />
                   </a>
                 </div>
               </div>
@@ -148,10 +169,10 @@ function App() {
         <footer id="contact">
           <div className="social-links">
             <a href="https://github.com/JoaoVitor0106" target="_blank" rel="noopener noreferrer">
-              <Github size={24} />
+              <Code2 size={24} />
             </a>
             <a href="#" target="_blank" rel="noopener noreferrer">
-              <Linkedin size={24} />
+              <span>LinkedIn</span>
             </a>
             <a href="mailto:joaovitor@example.com">
               <Mail size={24} />
