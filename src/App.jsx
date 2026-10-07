@@ -154,10 +154,11 @@ function App() {
                     Mais detalhes estarão disponíveis no GitHub em breve!
                   </p>
                   <div className="project-tags">
-                    <span className="tag">Em breve</span>
+                    <span className="tag">Java</span>
+                    <span className="tag">Desenvolvimento Backend</span>
                   </div>
-                  <a href="#" className="project-link">
-                    Repositório em breve <Code2 size={16} />
+                  <a href="https://github.com/Lehtche/MyZone" target="_blank" rel="noopener noreferrer" className="project-link">
+                    Ver no GitHub <Code2 size={16} />
                   </a>
                 </div>
               </div>
