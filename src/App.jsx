@@ -44,7 +44,7 @@ function App() {
 
               <div className="about-text glass">
                 <p>
-                  Olá! Sou o João Vitor, um desenvolvedor movido a <Coffee size={18} style={{ display: 'inline', verticalAlign: 'text-bottom' }} /> café e apaixonado por construir soluções inovadoras.
+                  Olá! Sou o João Vitor, um desenvolvedor movido a <Coffee size={18} style={{ display: 'inline', verticalAlign: 'text-bottom' }} /> café e apaixonado por construir de tudo! Gosto da sensação de ver um projeto concluído da forma que idealizei.
                   Tenho um forte interesse em arquitetura de software, bancos de dados, inteligência artificial e em criar interfaces modernas.
                 </p>
                 <p>
@@ -148,7 +148,7 @@ function App() {
 
                 <div className="timeline-item glass animate-on-scroll">
                   <div className="timeline-date">Setembro 2026 - Presente</div>
-                  <h4 className="timeline-role">Desenvolvedor Full Stack & Criador</h4>
+                  <h4 className="timeline-role">Desenvolvedor Full Stack (Freelance)</h4>
                   <h5 className="timeline-company">RaiUva (raiuva.com.br)</h5>
                   <ul className="timeline-list">
                     <li><strong>Arquitetura Monorepo:</strong> Separação em frontend (React + Vite) e microsserviço backend (Node.js/Express).</li>
