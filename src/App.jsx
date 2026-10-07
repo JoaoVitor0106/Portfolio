@@ -41,17 +41,17 @@ function App() {
             <div className="hero-content">
               <h1>Estudante de<br />Engenharia de Software</h1>
               <p className="subtitle">Conectando código a soluções inovadoras para a web e além.</p>
-              
+
               <div className="about-text glass">
                 <p>
-                  Olá! Sou o João Vitor, um desenvolvedor movido a <Coffee size={18} style={{display: 'inline', verticalAlign: 'text-bottom'}} /> café e apaixonado por construir soluções inovadoras.
+                  Olá! Sou o João Vitor, um desenvolvedor movido a <Coffee size={18} style={{ display: 'inline', verticalAlign: 'text-bottom' }} /> café e apaixonado por construir soluções inovadoras.
                   Tenho um forte interesse em arquitetura de software, bancos de dados, inteligência artificial e em criar interfaces modernas.
                 </p>
                 <p>
-                  Fora do código, você provavelmente me encontrará admirando <Car size={18} style={{display: 'inline', verticalAlign: 'text-bottom'}} /> carros e motos, ou curtindo qualquer coisa que envolva a cor roxa!
+                  Fora do código, você provavelmente me encontrará admirando <Car size={18} style={{ display: 'inline', verticalAlign: 'text-middle' }} /> carros e motos, conversando com amigos ou jogando!
                 </p>
               </div>
-              
+
               <a href="#projects" className="btn mt-4">
                 Ver Projetos <ArrowRight size={20} />
               </a>
@@ -62,7 +62,7 @@ function App() {
           <section id="skills" className="skills section-padding animate-on-scroll">
             <h2 className="section-title">Habilidades Técnicas</h2>
             <div className="skills-grid">
-              
+
               <div className="skill-card glass">
                 <div className="skill-header">
                   <Globe className="text-purple" size={24} />
@@ -140,12 +140,12 @@ function App() {
           {/* Experience & Education */}
           <section id="experience" className="timeline-section section-padding">
             <h2 className="section-title">Experiência & Formação</h2>
-            
+
             <div className="timeline-grid">
               {/* Experience */}
               <div className="timeline-column">
                 <h3 className="column-title"><Briefcase size={24} /> Profissional</h3>
-                
+
                 <div className="timeline-item glass animate-on-scroll">
                   <div className="timeline-date">Setembro 2026 - Presente</div>
                   <h4 className="timeline-role">Desenvolvedor Full Stack & Criador</h4>
@@ -163,7 +163,7 @@ function App() {
               {/* Education */}
               <div className="timeline-column">
                 <h3 className="column-title"><GraduationCap size={24} /> Acadêmico</h3>
-                
+
                 <div className="timeline-item glass animate-on-scroll">
                   <div className="timeline-date">2024 - 2028</div>
                   <h4 className="timeline-role">Bacharelado em Engenharia de Software</h4>
@@ -192,7 +192,7 @@ function App() {
           {/* Projects */}
           <section id="projects" className="projects section-padding">
             <h2 className="section-title">Meus Projetos</h2>
-            
+
             <div className="projects-grid">
               {/* Featured Project: Raiuva */}
               <div className="project-card glass featured animate-on-scroll" style={{ animationDelay: '0.1s' }}>
@@ -205,7 +205,7 @@ function App() {
                   </div>
                   <h3>RaiUva</h3>
                   <p>
-                    Plataforma de delivery sob demanda de bebidas, conectando clientes a lojistas para entregas em ambientes residenciais e universitários. 
+                    Plataforma de delivery sob demanda de bebidas, conectando clientes a lojistas para entregas em ambientes residenciais e universitários.
                     Inclui e-commerce para clientes e app de gestão (PDV) para vendedores.
                   </p>
                   <div className="project-tags">
@@ -229,7 +229,7 @@ function App() {
                   </div>
                   <h3>MyZone</h3>
                   <p>
-                    Um projeto construído em Java onde atuei como o principal desenvolvedor. 
+                    Um projeto construído em Java onde atuei como o principal desenvolvedor.
                     A aplicação envolve desafios complexos de estruturação e regras de negócio no backend.
                   </p>
                   <div className="project-tags">
@@ -312,8 +312,8 @@ function App() {
             <a href="https://github.com/JoaoVitor0106" target="_blank" rel="noopener noreferrer">
               <Code size={24} />
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <span>LinkedIn</span>
+            <a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-160399261/" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
             </a>
             <a href="mailto:joaovotort6@gmail.com">
               <Mail size={24} />
