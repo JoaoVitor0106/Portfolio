@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { ArrowRight, Mail, ExternalLink, Code2, Database, LayoutDashboard, Terminal } from 'lucide-react';
+import { ArrowRight, Mail, ExternalLink, Code2, Database, LayoutDashboard, Terminal, Coffee, Car } from 'lucide-react';
 import './index.css';
 
 function App() {
@@ -39,8 +39,11 @@ function App() {
           <section id="about" className="hero">
             <h1>Criando Experiências<br />Digitais Incríveis</h1>
             <p>
-              Sou um desenvolvedor apaixonado por construir soluções inovadoras.
-              Explorando tecnologias, arquitetura de software e criando interfaces modernas.
+              Olá! Sou o João Vitor, um desenvolvedor movido a <Coffee size={18} style={{display: 'inline', verticalAlign: 'text-bottom'}} /> café e apaixonado por construir soluções inovadoras.
+              Tenho um forte interesse em arquitetura de software, bancos de dados e em criar interfaces modernas.
+            </p>
+            <p style={{ marginTop: '-20px', marginBottom: '40px' }}>
+              Fora do código, você provavelmente me encontrará admirando <Car size={18} style={{display: 'inline', verticalAlign: 'text-bottom'}} /> carros e motos, ou curtindo qualquer coisa que envolva a cor roxa!
             </p>
             <a href="#projects" className="btn">
               Ver Projetos <ArrowRight size={20} />
