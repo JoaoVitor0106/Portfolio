@@ -15,7 +15,7 @@ function App() {
         }
       });
     };
-    
+
     window.addEventListener('scroll', handleScroll);
     handleScroll(); // Check on load
     return () => window.removeEventListener('scroll', handleScroll);
@@ -37,7 +37,7 @@ function App() {
 
         <main>
           <section id="about" className="hero">
-            <h1>Criando Experiências<br/>Digitais Incríveis</h1>
+            <h1>Criando Experiências<br />Digitais Incríveis</h1>
             <p>
               Sou um desenvolvedor apaixonado por construir soluções inovadoras.
               Explorando tecnologias, arquitetura de software e criando interfaces modernas.
@@ -49,9 +49,9 @@ function App() {
 
           <section id="projects" className="projects">
             <h2 className="section-title">Meus Projetos</h2>
-            
+
             <div className="projects-grid">
-              
+
               {/* Featured Project: Raiuva */}
               <div className="project-card glass featured animate-on-scroll" style={{ animationDelay: '0.1s' }}>
                 <div className="project-image-placeholder glass" style={{ width: '100%', height: '100%', minHeight: '300px', display: 'flex', alignItems: 'center', justifyItems: 'center', borderRadius: '16px', background: 'rgba(255,255,255,0.4)', overflow: 'hidden' }}>
@@ -63,7 +63,7 @@ function App() {
                   </div>
                   <h3>RaiUva</h3>
                   <p>
-                    Uma aplicação full-stack moderna e multiplataforma desenvolvida com React, Node.js e Firebase. 
+                    Uma aplicação full-stack moderna e multiplataforma desenvolvida com React, Node.js e Firebase.
                     Possui suporte tanto para web quanto para dispositivos móveis (via Capacitor).
                   </p>
                   <div className="project-tags">
@@ -72,7 +72,7 @@ function App() {
                     <span className="tag">Firebase</span>
                     <span className="tag">Capacitor</span>
                   </div>
-                  <a href="#" className="project-link">
+                  <a href="https://raiuva.com.br" target="_blank" rel="noopener noreferrer" className="project-link">
                     Acessar Projeto <ExternalLink size={16} />
                   </a>
                 </div>
@@ -86,7 +86,7 @@ function App() {
                   </div>
                   <h3>Análise Gás Natural</h3>
                   <p>
-                    Um projeto em Java focado em análise de dados, explorando os 
+                    Um projeto em Java focado em análise de dados, explorando os
                     preços do gás natural no Brasil utilizando estruturas de dados.
                   </p>
                   <div className="project-tags">
@@ -107,7 +107,7 @@ function App() {
                   </div>
                   <h3>Boieng737</h3>
                   <p>
-                    Trabalho de Arquitetura de Software com documentação completa, 
+                    Trabalho de Arquitetura de Software com documentação completa,
                     diagramas e modelagem detalhada em Python.
                   </p>
                   <div className="project-tags">
@@ -128,7 +128,7 @@ function App() {
                   </div>
                   <h3>Corrida Sensata</h3>
                   <p>
-                    Um divertido jogo de corrida educacional desenvolvido inteiramente 
+                    Um divertido jogo de corrida educacional desenvolvido inteiramente
                     em Python utilizando a biblioteca Pygame.
                   </p>
                   <div className="project-tags">
@@ -150,7 +150,7 @@ function App() {
                   </div>
                   <h3>MyZone</h3>
                   <p>
-                    Uma plataforma que estou desenvolvendo atualmente. 
+                    Uma plataforma que estou desenvolvendo atualmente.
                     Mais detalhes estarão disponíveis no GitHub em breve!
                   </p>
                   <div className="project-tags">
