@@ -150,8 +150,8 @@ function App() {
                   </div>
                   <h3>MyZone</h3>
                   <p>
-                    Uma plataforma que estou desenvolvendo atualmente.
-                    Mais detalhes estarão disponíveis no GitHub em breve!
+                    Um projeto construído em Java onde atuei como o principal desenvolvedor. 
+                    A aplicação envolve desafios complexos de estruturação e regras de negócio no backend.
                   </p>
                   <div className="project-tags">
                     <span className="tag">Java</span>
