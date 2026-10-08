@@ -221,7 +221,7 @@ function App() {
                     <span className="tag">Tailwind CSS</span>
                   </div>
                   <div style={{ display: 'flex', gap: '10px', marginTop: '15px' }}>
-                    <button onClick={() => setActivePrototype('raiuva')} className="project-link" style={{ background: '#000', color: 'white', border: 'none', cursor: 'pointer' }}>
+                    <button onClick={() => setActivePrototype('raiuva')} className="project-link" style={{ background: 'transparent', color: '#000', border: 'none', cursor: 'pointer' }}>
                       Protótipo <Play size={16} />
                     </button>
                   </div>
