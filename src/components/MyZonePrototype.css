@@ -1,0 +1,144 @@
+.myzone-mockup-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  background: #0f111a;
+  border-radius: 0 0 16px 16px;
+  min-height: 500px;
+}
+
+.mockup-info-top {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #e2e8f0;
+}
+
+.mockup-info-top h3 {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.mockup-info-top p {
+  color: #94a3b8;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.mockup-info-top code {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #3b82f6;
+}
+
+.desktop-mockup-container {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+}
+
+.desktop-mockup {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.desktop-screen-bezel {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background: #111;
+  border-radius: 12px 12px 0 0;
+  border: 4px solid #333;
+  border-bottom: 15px solid #222;
+  position: relative;
+  padding: 12px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.desktop-camera {
+  position: absolute;
+  top: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #333;
+  box-shadow: inset 0 0 2px #000;
+}
+
+.desktop-screen {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  border-radius: 4px;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.desktop-screen::-webkit-scrollbar {
+  display: none;
+}
+
+.desktop-mockup-image {
+  width: 100%;
+  display: block;
+}
+
+.desktop-logo-space {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 4px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 2px;
+}
+
+.desktop-base {
+  width: 115%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.desktop-base-top {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+  border-radius: 0 0 4px 4px;
+  background: linear-gradient(to bottom, #d4d4d4, #a3a3a3);
+}
+
+.desktop-base-bottom {
+  width: 100%;
+  height: 15px;
+  background: #8a8a8a;
+  border-radius: 0 0 12px 12px;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+}
+
+.desktop-touchpad-cutout {
+  width: 15%;
+  height: 100%;
+  background: #737373;
+  border-radius: 0 0 4px 4px;
+}
+
+@media (max-width: 768px) {
+  .desktop-mockup-container {
+    padding: 0 20px;
+  }
+}

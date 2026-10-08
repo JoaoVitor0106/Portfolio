@@ -1,8 +1,13 @@
-import React, { useEffect } from 'react';
-import { ArrowRight, Mail, ExternalLink, Code2, Database, LayoutDashboard, Terminal, Coffee, Car, Briefcase, GraduationCap, Award, Cpu, Globe, Server, Wrench, Sparkles, Code } from 'lucide-react';
+import React, { useEffect, useState } from 'react';
+import { ArrowRight, Mail, ExternalLink, Code2, Database, LayoutDashboard, Terminal, Coffee, Car, Briefcase, GraduationCap, Award, Cpu, Globe, Server, Wrench, Sparkles, Code, Play } from 'lucide-react';
+import InteractiveModal from './components/InteractiveModal';
+import RaiuvaPrototype from './components/RaiuvaPrototype';
+import MyZonePrototype from './components/MyZonePrototype';
 import './index.css';
 
 function App() {
+  const [activePrototype, setActivePrototype] = useState(null);
+
   useEffect(() => {
     const handleScroll = () => {
       const elements = document.querySelectorAll('.animate-on-scroll');
@@ -215,9 +220,14 @@ function App() {
                     <span className="tag">Capacitor</span>
                     <span className="tag">Tailwind CSS</span>
                   </div>
-                  <a href="https://raiuva.com.br" target="_blank" rel="noopener noreferrer" className="project-link">
-                    Acessar Projeto <ExternalLink size={16} />
-                  </a>
+                  <div style={{ display: 'flex', gap: '10px', marginTop: '15px' }}>
+                    <a href="https://raiuva.com.br" target="_blank" rel="noopener noreferrer" className="project-link">
+                      Acessar <ExternalLink size={16} />
+                    </a>
+                    <button onClick={() => setActivePrototype('raiuva')} className="project-link" style={{ background: 'var(--primary)', color: 'white', border: 'none', cursor: 'pointer' }}>
+                      Protótipo <Play size={16} />
+                    </button>
+                  </div>
                 </div>
               </div>
 
@@ -236,9 +246,14 @@ function App() {
                     <span className="tag">Java</span>
                     <span className="tag">Backend</span>
                   </div>
-                  <a href="https://github.com/Lehtche/MyZone" target="_blank" rel="noopener noreferrer" className="project-link">
-                    Ver no GitHub <Code size={16} />
-                  </a>
+                  <div style={{ display: 'flex', gap: '10px', marginTop: '15px' }}>
+                    <a href="https://github.com/Lehtche/MyZone" target="_blank" rel="noopener noreferrer" className="project-link">
+                      GitHub <Code size={16} />
+                    </a>
+                    <button onClick={() => setActivePrototype('myzone')} className="project-link" style={{ background: '#3b82f6', color: 'white', border: 'none', cursor: 'pointer' }}>
+                      Dashboard <Play size={16} />
+                    </button>
+                  </div>
                 </div>
               </div>
 
@@ -322,6 +337,22 @@ function App() {
           <p>© {new Date().getFullYear()} João Vitor Teixeira. Construído com Vite & React.</p>
         </footer>
       </div>
+
+      <InteractiveModal 
+        isOpen={activePrototype === 'raiuva'} 
+        onClose={() => setActivePrototype(null)}
+        title="Protótipo: RaiUva Delivery"
+      >
+        <RaiuvaPrototype />
+      </InteractiveModal>
+
+      <InteractiveModal 
+        isOpen={activePrototype === 'myzone'} 
+        onClose={() => setActivePrototype(null)}
+        title="Protótipo: MyZone Backend"
+      >
+        <MyZonePrototype />
+      </InteractiveModal>
     </div>
   );
 }
