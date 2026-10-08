@@ -247,9 +247,6 @@ function App() {
                     <a href="https://github.com/Lehtche/MyZone" target="_blank" rel="noopener noreferrer" className="project-link">
                       GitHub <Code size={16} />
                     </a>
-                    <button onClick={() => setActivePrototype('myzone')} className="project-link" style={{ background: '#3b82f6', color: 'white', border: 'none', cursor: 'pointer' }}>
-                      Dashboard <Play size={16} />
-                    </button>
                   </div>
                 </div>
               </div>
